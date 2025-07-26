@@ -3,7 +3,7 @@ Handwritten digit classification using an MLP neural network built with scikit-l
 
 This project implements a neural network model to recognize handwritten digits using the 'digits' dataset from scikit-learn.
 
-📦 Features
+## 📦 Features
 
 - Handwritten digit classification using neural networks
 - Training/testing data split for model evaluation
@@ -11,14 +11,22 @@ This project implements a neural network model to recognize handwritten digits u
 - Confusion matrix for performance analysis
 
 
-🛠️ Technologies Used
+## 🛠️ Technologies Used
 
-- Python 3.x
+- Python 3
+- Streamlit
 - scikit-learn
 - matplotlib
 - numpy
 
-🙋‍♀️ Developed By Khushi Satarkar 
+## 📸 Results
+
+### Dashboard
+![Home Screen](results/trainmodel.jpg)
+### Prediction Output
+![Prediction](results/prediction.png)
+
+## 🙋‍♀️ Developed By Khushi Satarkar 
 
 Connect with me here! (Linkedin: [https://www.linkedin.com/in/khushi-satarkar-039056254/])
 
