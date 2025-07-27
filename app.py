@@ -14,7 +14,7 @@ digits = datasets.load_digits()
 X = digits.data / 16.0
 y = digits.target
 
-x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
 
 @st.cache_data(show_spinner=True)
 def train_model():
@@ -49,7 +49,7 @@ canvas_result = st_canvas(
 
 if canvas_result.image_data is not None:
     img = canvas_result.image_data.astype("uint8")
-    st.image(img, caption="Your Drawing", width=128)
+    # st.image(img, caption="Your Drawing", width=128)
 
     img_gray = cv2.cvtColor(img, cv2.COLOR_RGBA2GRAY)
     img_resized = cv2.resize(img_gray, (8, 8), interpolation=cv2.INTER_AREA)
